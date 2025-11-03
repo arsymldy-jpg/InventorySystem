@@ -1,0 +1,96 @@
+﻿@model Inventory_Web.Models.UpdateUserDto
+
+@{
+    ViewData["Title"] = "ویرایش کاربر";
+}
+
+<div class="container-fluid mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-sm">
+                <div class="card-header">
+                    <h4 class="mb-0">ویرایش کاربر - @Model.FirstName @Model.LastName</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Edit" method="post">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger mb-3"></div>
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input asp-for="FirstName" class="form-control" id="floatingFirstName" placeholder=" " />
+                                    <label for="floatingFirstName">نام</label>
+                                    <span asp-validation-for="FirstName" class="text-danger d-block"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input asp-for="LastName" class="form-control" id="floatingLastName" placeholder=" " />
+                                    <label for="floatingLastName">نام خانوادگی</label>
+                                    <span asp-validation-for="LastName" class="text-danger d-block"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input asp-for="MobileNumber" class="form-control" id="floatingMobileNumber" placeholder=" " />
+                                    <label for="floatingMobileNumber">شماره همراه</label>
+                                    <span asp-validation-for="MobileNumber" class="text-danger d-block"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input asp-for="Email" type="email" class="form-control" id="floatingEmail" placeholder=" " />
+                                    <label for="floatingEmail">ایمیل</label>
+                                    <span asp-validation-for="Email" class="text-danger d-block"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <select asp-for="Role" asp-items="Html.GetEnumSelectList<Inventory_Web.Models.Enums.UserRole>()" class="form-select" id="floatingRole">
+                                        <option value="">انتخاب نقش...</option>
+                                    </select>
+                                    <label for="floatingRole">نقش</label>
+                                    <span asp-validation-for="Role" class="text-danger d-block"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="form-check form-switch">
+                                    <input asp-for="IsActive" class="form-check-input" type="checkbox" id="IsActiveSwitch">
+                                    <label class="form-check-label" for="IsActiveSwitch">فعال</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <input asp-for="ExpiryDate" type="date" class="form-control" id="floatingExpiryDate" placeholder=" " />
+                                    <label for="floatingExpiryDate">تاریخ انقضا (اختیاری)</label>
+                                    <span asp-validation-for="ExpiryDate" class="text-danger d-block"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a asp-action="Index" class="btn btn-secondary me-md-2">لغو</a>
+                            <button type="submit" class="btn btn-warning">ویرایش</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

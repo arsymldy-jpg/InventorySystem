@@ -1,0 +1,48 @@
+﻿/* حذف حاشیه‌های پیش‌فرض برای بدنه */
+html {
+    scroll-padding-top: calc(4.5rem + 1px); /* برای جبران navbar در لینک‌های #anchor */
+}
+
+body {
+    padding-top: 0; /* حذف padding از Layout.cshtml اگر وجود داشت */
+    padding-bottom: 0;
+    margin: 0;
+    background-color: #f8f9fa; /* یک رنگ پس‌زمینه نرم */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* فونت مدرن */
+}
+
+/* بهبود کارت ورود */
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* افکت hover */
+}
+
+    .card:hover {
+        transform: translateY(-5px); /* بالا رفتن کارت هنگام hover */
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* سایه بیشتر هنگام hover */
+    }
+
+/* بهبود فیلدهای ورود */
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+    color: #0d6efd; /* رنگ برچسب هنگام فوکوس یا پر بودن */
+}
+
+/* بهبود دکمه */
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+    .btn-primary:hover {
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }
+
+/* بهبود Layout */
+.min-vh-100 {
+    min-height: 100vh; /* ارتفاع کامل صفحه */
+}
+
+/* می‌توانید سایر استایل‌های شخصی را اینجا اضافه کنید */

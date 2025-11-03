@@ -1,0 +1,64 @@
+﻿@model Inventory_Web.Models.UserDto
+
+@{
+    ViewData["Title"] = "حذف کاربر";
+}
+
+<div class="container-fluid mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-sm border-danger">
+                <div class="card-header bg-danger text-white">
+                    <h4 class="mb-0">حذف کاربر</h4>
+                </div>
+                <div class="card-body">
+                    <h5 class="text-danger">آیا از حذف کاربر زیر اطمینان دارید؟</h5>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-4">نام:</dt>
+                        <dd class="col-sm-8">@Model.FirstName</dd>
+
+                        <dt class="col-sm-4">نام خانوادگی:</dt>
+                        <dd class="col-sm-8">@Model.LastName</dd>
+
+                        <dt class="col-sm-4">کد پرسنلی:</dt>
+                        <dd class="col-sm-8">@Model.PersonnelCode</dd>
+
+                        <dt class="col-sm-4">شماره همراه:</dt>
+                        <dd class="col-sm-8">@Model.MobileNumber</dd>
+
+                        <dt class="col-sm-4">ایمیل:</dt>
+                        <dd class="col-sm-8">@Model.Email</dd>
+
+                        <dt class="col-sm-4">نقش:</dt>
+                        <dd class="col-sm-8">@Model.Role</dd>
+
+                        <dt class="col-sm-4">وضعیت:</dt>
+                        <dd class="col-sm-8">
+                            @if (Model.IsActive)
+                            {
+                                <span class="badge bg-success">فعال</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">غیرفعال</span>
+                            }
+                        </dd>
+
+                        <dt class="col-sm-4">تاریخ انقضا:</dt>
+                        <dd class="col-sm-8">
+                            @(Model.ExpiryDate?.ToString("yyyy/MM/dd") ?? "تعیین نشده")
+                        </dd>
+                    </dl>
+
+                    <form asp-action="DeleteConfirmed" asp-route-id="@Model.Id" method="post" class="d-inline">
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a asp-action="Index" class="btn btn-secondary me-md-2">لغو</a>
+                            <button type="submit" class="btn btn-danger">حذف</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

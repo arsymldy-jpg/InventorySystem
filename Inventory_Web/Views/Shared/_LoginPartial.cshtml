@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Inventory_Web.Services
+@inject IAuthService AuthService
+
+<ul class="navbar-nav">
+    @if (AuthService.IsLoggedIn())
+    {
+        <li class="nav-item">
+            <!-- ممکن است بخواهید نام کاربری یا کد پرسنلی را نشان دهید -->
+            <!-- برای این کار، نیاز به یک سرویس دیگر یا استخراج اطلاعات از Token دارید -->
+            <!-- در اینجا فقط لینک خروج نشان داده می‌شود -->
+@*             <span class="navbar-text text-dark me-2">کاربر وارد شده</span>
+ *@        </li>
+        <li class="nav-item">
+            <form class="form-inline" asp-controller="Auth" asp-action="Logout" method="post">
+                <button type="submit" class="nav-link btn btn-link text-dark">خروج</button>
+            </form>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-controller="Auth" asp-action="Login">ورود</a>
+        </li>
+    }
+</ul>

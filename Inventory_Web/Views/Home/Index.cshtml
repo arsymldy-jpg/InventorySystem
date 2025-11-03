@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "داشبورد";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="display-4">خوش آمدید!</h1>
+            <p class="lead">به داشبورد سیستم مدیریت انبار خود وارد شده‌اید.</p>
+            <hr />
+            <!-- می‌توانید محتوای داشبورد را اینجا قرار دهید -->
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card text-white bg-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">کالاها</h5>
+                            <p class="card-text">مدیریت لیست کالاها</p>
+                            <a href="@Url.Action("Index", "Products")" class="btn btn-light">مشاهده</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card text-white bg-success">
+                        <div class="card-body">
+                            <h5 class="card-title">کاربران</h5>
+                            <p class="card-text">مدیریت کاربران سیستم</p>
+                            <a href="@Url.Action("Index", "Users")" class="btn btn-light">مشاهده</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card text-white bg-info">
+                        <div class="card-body">
+                            <h5 class="card-title">انبارها</h5>
+                            <p class="card-text">مدیریت انبارها</p>
+                            <a href="#" class="btn btn-light">مشاهده</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

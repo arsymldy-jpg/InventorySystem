@@ -1,0 +1,50 @@
+﻿@model Inventory_Web.Models.LoginDto
+
+@{
+    ViewData["Title"] = "ورود به سیستم";
+    Layout = "_Layout"; // اطمینان حاصل کنید که Layout مناسب استفاده می‌شود
+}
+
+<!-- یک کانتینر بزرگتر و متمرکز کننده -->
+<div class="container-fluid d-flex align-items-center justify-content-center min-vh-100">
+    <div class="col-md-6 col-lg-4">
+        <!-- کارت ورود با سایه و حاشیه -->
+        <div class="card shadow-lg border-0 rounded-3">
+            <div class="card-header text-center py-4 bg-primary text-white rounded-top-3">
+                <!-- می‌توانید لوگو را اینجا قرار دهید -->
+                <h3 class="mb-0">سیستم مدیریت انبار</h3>
+                <h5 class="mt-2 mb-0">ورود به حساب کاربری</h5>
+            </div>
+            <div class="card-body p-5">
+                <form asp-action="Login" asp-controller="Auth" method="post">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger mb-3"></div>
+
+                    <div class="form-floating mb-3">
+                        <input asp-for="PersonnelCode" class="form-control" id="floatingPersonnelCode" placeholder=" " />
+                        <label for="floatingPersonnelCode" class="form-label">کد پرسنلی</label>
+                        <span asp-validation-for="PersonnelCode" class="text-danger d-block"></span>
+                    </div>
+
+                    <div class="form-floating mb-4">
+                        <input asp-for="Password" type="password" class="form-control" id="floatingPassword" placeholder=" " />
+                        <label for="floatingPassword" class="form-label">رمز عبور</label>
+                        <span asp-validation-for="Password" class="text-danger d-block"></span>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg py-2">ورود</button>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer text-center text-muted py-2 bg-light rounded-bottom-3">
+                <small>کلیه حقوق محفوظ است &copy; 1404</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
