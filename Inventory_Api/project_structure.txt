@@ -1,0 +1,386 @@
+³   appsettings.Development.json
+³   appsettings.json
+³   inventory.db
+³   inventory.db-shm
+³   inventory.db-wal
+³   Inventory_Api.csproj
+³   Inventory_Api.csproj.user
+³   Inventory_Api.http
+³   Program.cs
+³   project_structure.txt
+³   WeatherForecast.cs
+³   
+----bin
+³   ----Debug
+³   ³   ----net8.0
+³   ³       ³   appsettings.Development.json
+³   ³       ³   appsettings.json
+³   ³       ³   BCrypt.Net-Next.dll
+³   ³       ³   Humanizer.dll
+³   ³       ³   Inventory_Api.deps.json
+³   ³       ³   Inventory_Api.dll
+³   ³       ³   Inventory_Api.exe
+³   ³       ³   Inventory_Api.pdb
+³   ³       ³   Inventory_Api.runtimeconfig.json
+³   ³       ³   Inventory_Api.staticwebassets.endpoints.json
+³   ³       ³   Microsoft.AspNetCore.Authentication.JwtBearer.dll
+³   ³       ³   Microsoft.AspNetCore.Authorization.dll
+³   ³       ³   Microsoft.AspNetCore.Cryptography.Internal.dll
+³   ³       ³   Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+³   ³       ³   Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+³   ³       ³   Microsoft.AspNetCore.Metadata.dll
+³   ³       ³   Microsoft.Bcl.AsyncInterfaces.dll
+³   ³       ³   Microsoft.CodeAnalysis.CSharp.dll
+³   ³       ³   Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+³   ³       ³   Microsoft.CodeAnalysis.dll
+³   ³       ³   Microsoft.CodeAnalysis.Workspaces.dll
+³   ³       ³   Microsoft.Data.Sqlite.dll
+³   ³       ³   Microsoft.EntityFrameworkCore.Abstractions.dll
+³   ³       ³   Microsoft.EntityFrameworkCore.Design.dll
+³   ³       ³   Microsoft.EntityFrameworkCore.dll
+³   ³       ³   Microsoft.EntityFrameworkCore.Relational.dll
+³   ³       ³   Microsoft.EntityFrameworkCore.Sqlite.dll
+³   ³       ³   Microsoft.Extensions.Caching.Memory.dll
+³   ³       ³   Microsoft.Extensions.DependencyInjection.Abstractions.dll
+³   ³       ³   Microsoft.Extensions.DependencyInjection.dll
+³   ³       ³   Microsoft.Extensions.DependencyModel.dll
+³   ³       ³   Microsoft.Extensions.Identity.Core.dll
+³   ³       ³   Microsoft.Extensions.Identity.Stores.dll
+³   ³       ³   Microsoft.Extensions.Logging.Abstractions.dll
+³   ³       ³   Microsoft.Extensions.Logging.dll
+³   ³       ³   Microsoft.Extensions.Options.dll
+³   ³       ³   Microsoft.IdentityModel.Abstractions.dll
+³   ³       ³   Microsoft.IdentityModel.JsonWebTokens.dll
+³   ³       ³   Microsoft.IdentityModel.Logging.dll
+³   ³       ³   Microsoft.IdentityModel.Protocols.dll
+³   ³       ³   Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+³   ³       ³   Microsoft.IdentityModel.Tokens.dll
+³   ³       ³   Microsoft.OpenApi.dll
+³   ³       ³   Mono.TextTemplating.dll
+³   ³       ³   SQLitePCLRaw.batteries_v2.dll
+³   ³       ³   SQLitePCLRaw.core.dll
+³   ³       ³   SQLitePCLRaw.provider.e_sqlite3.dll
+³   ³       ³   Swashbuckle.AspNetCore.Swagger.dll
+³   ³       ³   Swashbuckle.AspNetCore.SwaggerGen.dll
+³   ³       ³   Swashbuckle.AspNetCore.SwaggerUI.dll
+³   ³       ³   System.CodeDom.dll
+³   ³       ³   System.Composition.AttributedModel.dll
+³   ³       ³   System.Composition.Convention.dll
+³   ³       ³   System.Composition.Hosting.dll
+³   ³       ³   System.Composition.Runtime.dll
+³   ³       ³   System.Composition.TypedParts.dll
+³   ³       ³   System.IdentityModel.Tokens.Jwt.dll
+³   ³       ³   
+³   ³       ----cs
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.Workspaces.resources.dll
+³   ³       ³       
+³   ³       ----de
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.Workspaces.resources.dll
+³   ³       ³       
+³   ³       ----es
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.Workspaces.resources.dll
+³   ³       ³       
+³   ³       ----fr
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.Workspaces.resources.dll
+³   ³       ³       
+³   ³       ----it
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.Workspaces.resources.dll
+³   ³       ³       
+³   ³       ----ja
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.Workspaces.resources.dll
+³   ³       ³       
+³   ³       ----ko
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.Workspaces.resources.dll
+³   ³       ³       
+³   ³       ----pl
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.Workspaces.resources.dll
+³   ³       ³       
+³   ³       ----pt-BR
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.Workspaces.resources.dll
+³   ³       ³       
+³   ³       ----ru
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.Workspaces.resources.dll
+³   ³       ³       
+³   ³       ----runtimes
+³   ³       ³   ----browser-wasm
+³   ³       ³   ³   ----nativeassets
+³   ³       ³   ³       ----net8.0
+³   ³       ³   ³               e_sqlite3.a
+³   ³       ³   ³               
+³   ³       ³   ----linux-arm
+³   ³       ³   ³   ----native
+³   ³       ³   ³           libe_sqlite3.so
+³   ³       ³   ³           
+³   ³       ³   ----linux-arm64
+³   ³       ³   ³   ----native
+³   ³       ³   ³           libe_sqlite3.so
+³   ³       ³   ³           
+³   ³       ³   ----linux-armel
+³   ³       ³   ³   ----native
+³   ³       ³   ³           libe_sqlite3.so
+³   ³       ³   ³           
+³   ³       ³   ----linux-mips64
+³   ³       ³   ³   ----native
+³   ³       ³   ³           libe_sqlite3.so
+³   ³       ³   ³           
+³   ³       ³   ----linux-musl-arm
+³   ³       ³   ³   ----native
+³   ³       ³   ³           libe_sqlite3.so
+³   ³       ³   ³           
+³   ³       ³   ----linux-musl-arm64
+³   ³       ³   ³   ----native
+³   ³       ³   ³           libe_sqlite3.so
+³   ³       ³   ³           
+³   ³       ³   ----linux-musl-x64
+³   ³       ³   ³   ----native
+³   ³       ³   ³           libe_sqlite3.so
+³   ³       ³   ³           
+³   ³       ³   ----linux-ppc64le
+³   ³       ³   ³   ----native
+³   ³       ³   ³           libe_sqlite3.so
+³   ³       ³   ³           
+³   ³       ³   ----linux-s390x
+³   ³       ³   ³   ----native
+³   ³       ³   ³           libe_sqlite3.so
+³   ³       ³   ³           
+³   ³       ³   ----linux-x64
+³   ³       ³   ³   ----native
+³   ³       ³   ³           libe_sqlite3.so
+³   ³       ³   ³           
+³   ³       ³   ----linux-x86
+³   ³       ³   ³   ----native
+³   ³       ³   ³           libe_sqlite3.so
+³   ³       ³   ³           
+³   ³       ³   ----maccatalyst-arm64
+³   ³       ³   ³   ----native
+³   ³       ³   ³           libe_sqlite3.dylib
+³   ³       ³   ³           
+³   ³       ³   ----maccatalyst-x64
+³   ³       ³   ³   ----native
+³   ³       ³   ³           libe_sqlite3.dylib
+³   ³       ³   ³           
+³   ³       ³   ----osx-arm64
+³   ³       ³   ³   ----native
+³   ³       ³   ³           libe_sqlite3.dylib
+³   ³       ³   ³           
+³   ³       ³   ----osx-x64
+³   ³       ³   ³   ----native
+³   ³       ³   ³           libe_sqlite3.dylib
+³   ³       ³   ³           
+³   ³       ³   ----win-arm
+³   ³       ³   ³   ----native
+³   ³       ³   ³           e_sqlite3.dll
+³   ³       ³   ³           
+³   ³       ³   ----win-arm64
+³   ³       ³   ³   ----native
+³   ³       ³   ³           e_sqlite3.dll
+³   ³       ³   ³           
+³   ³       ³   ----win-x64
+³   ³       ³   ³   ----native
+³   ³       ³   ³           e_sqlite3.dll
+³   ³       ³   ³           
+³   ³       ³   ----win-x86
+³   ³       ³       ----native
+³   ³       ³               e_sqlite3.dll
+³   ³       ³               
+³   ³       ----tr
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.Workspaces.resources.dll
+³   ³       ³       
+³   ³       ----zh-Hans
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.resources.dll
+³   ³       ³       Microsoft.CodeAnalysis.Workspaces.resources.dll
+³   ³       ³       
+³   ³       ----zh-Hant
+³   ³               Microsoft.CodeAnalysis.CSharp.resources.dll
+³   ³               Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+³   ³               Microsoft.CodeAnalysis.resources.dll
+³   ³               Microsoft.CodeAnalysis.Workspaces.resources.dll
+³   ³               
+³   ----Release
+³       ----net8.0
+----Controllers
+³       AuditController.cs
+³       AuthController.cs
+³       BrandsController.cs
+³       HealthController.cs
+³       ProductsController.cs
+³       ReportsController.cs
+³       StocksController.cs
+³       TestController.cs
+³       UsersController.cs
+³       UsersV2Controller.cs
+³       UserWarehouseAccessController.cs
+³       WarehousesController.cs
+³       WeatherForecastController.cs
+³       
+----Data
+³       ApplicationDbContext.cs
+³       
+----Helpers
+³       AuthorizationPolicies.cs
+³       MappingHelper.cs
+³       
+----Middlewares
+³       AuditMiddleware.cs
+³       
+----Models
+³   ----DTOs
+³   ³       AuthDto.cs
+³   ³       BrandDto.cs
+³   ³       ProductDto.cs
+³   ³       ReportDto.cs
+³   ³       StockDto.cs
+³   ³       UserDto.cs
+³   ³       UserWarehouseAccessDto.cs
+³   ³       WarehouseDto.cs
+³   ³       
+³   ----Entities
+³   ³       AuditLog.cs
+³   ³       BaseEntity.cs
+³   ³       Brand.cs
+³   ³       Product.cs
+³   ³       Stock.cs
+³   ³       User.cs
+³   ³       UserWarehouseAccess.cs
+³   ³       Warehouse.cs
+³   ³       
+³   ----Enums
+³           UserRole.cs
+³           
+----obj
+³   ³   Inventory_Api.csproj.nuget.dgspec.json
+³   ³   Inventory_Api.csproj.nuget.g.props
+³   ³   Inventory_Api.csproj.nuget.g.targets
+³   ³   project.assets.json
+³   ³   project.nuget.cache
+³   ³   
+³   ----Debug
+³   ³   ----net8.0
+³   ³       ³   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+³   ³       ³   ApiEndpoints.json
+³   ³       ³   apphost.exe
+³   ³       ³   Inventor.E96093CA.Up2Date
+³   ³       ³   Inventory_Api.AssemblyInfo.cs
+³   ³       ³   Inventory_Api.AssemblyInfoInputs.cache
+³   ³       ³   Inventory_Api.assets.cache
+³   ³       ³   Inventory_Api.csproj.AssemblyReference.cache
+³   ³       ³   Inventory_Api.csproj.BuildWithSkipAnalyzers
+³   ³       ³   Inventory_Api.csproj.CoreCompileInputs.cache
+³   ³       ³   Inventory_Api.csproj.FileListAbsolute.txt
+³   ³       ³   Inventory_Api.dll
+³   ³       ³   Inventory_Api.GeneratedMSBuildEditorConfig.editorconfig
+³   ³       ³   Inventory_Api.genruntimeconfig.cache
+³   ³       ³   Inventory_Api.GlobalUsings.g.cs
+³   ³       ³   Inventory_Api.MvcApplicationPartsAssemblyInfo.cache
+³   ³       ³   Inventory_Api.MvcApplicationPartsAssemblyInfo.cs
+³   ³       ³   Inventory_Api.pdb
+³   ³       ³   Inventory_Api.sourcelink.json
+³   ³       ³   staticwebassets.build.endpoints.json
+³   ³       ³   staticwebassets.build.json
+³   ³       ³   staticwebassets.references.upToDateCheck.txt
+³   ³       ³   staticwebassets.removed.txt
+³   ³       ³   
+³   ³       ----EndpointInfo
+³   ³       ³       Inventory_Api.json
+³   ³       ³       Inventory_Api.OpenApiFiles.cache
+³   ³       ³       
+³   ³       ----ref
+³   ³       ³       Inventory_Api.dll
+³   ³       ³       
+³   ³       ----refint
+³   ³       ³       Inventory_Api.dll
+³   ³       ³       
+³   ³       ----staticwebassets
+³   ³               msbuild.build.Inventory_Api.props
+³   ³               msbuild.buildMultiTargeting.Inventory_Api.props
+³   ³               msbuild.buildTransitive.Inventory_Api.props
+³   ³               
+³   ----Release
+³       ----net8.0
+³           ³   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+³           ³   Inventory_Api.AssemblyInfo.cs
+³           ³   Inventory_Api.AssemblyInfoInputs.cache
+³           ³   Inventory_Api.assets.cache
+³           ³   Inventory_Api.csproj.AssemblyReference.cache
+³           ³   Inventory_Api.GeneratedMSBuildEditorConfig.editorconfig
+³           ³   Inventory_Api.GlobalUsings.g.cs
+³           ³   
+³           ----ref
+³           ----refint
+----Properties
+³       launchSettings.json
+³       
+----Repositories
+³       BrandRepository.cs
+³       IBrandRepository.cs
+³       IProductRepository.cs
+³       IRepository.cs
+³       IStockRepository.cs
+³       IUserRepository.cs
+³       IUserWarehouseAccessRepository.cs
+³       IWarehouseRepository.cs
+³       ProductRepository.cs
+³       Repository.cs
+³       StockRepository.cs
+³       UserRepository.cs
+³       UserWarehouseAccessRepository.cs
+³       WarehouseRepository.cs
+³       
+----Services
+        AuditService.cs
+        AuthService.cs
+        BrandService.cs
+        DatabaseInitializer.cs
+        IAuditService.cs
+        IAuthService.cs
+        IBrandService.cs
+        IPasswordService.cs
+        IProductService.cs
+        IReportService.cs
+        IStockService.cs
+        IUserService.cs
+        IUserWarehouseAccessService.cs
+        IWarehouseService.cs
+        PasswordService.cs
+        ProductService.cs
+        ReportService.cs
+        StockService.cs
+        UserService.cs
+        UserWarehouseAccessService.cs
+        WarehouseService.cs
+        
